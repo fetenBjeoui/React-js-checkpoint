@@ -1,4 +1,5 @@
 import React from 'react'
+
 function ExampleComponent(){
     return(
 <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
@@ -8,14 +9,17 @@ function ExampleComponent(){
           <input type="email" 
                  className="form-control" 
                  id="email" 
+                 icon="envelope"
                  aria-describedby="emailHelp" 
-                 placeholder="Enter email"
+             placeholder="Enter email"
           />
+        
           <small id="emailHelp" className="form-text text-muted">email</small>
           </div>
           <div className="form-group text-left">
               <label htmlFor="exampleInputPassword1">Password</label>
               <input type="password" 
+              icon="lock"
                   className="form-control" 
                   id="password" 
                   placeholder="Password"
@@ -25,6 +29,7 @@ function ExampleComponent(){
           <button 
               type="submit" 
               className="btn btn-primary"
+              outline color="secondary"
           >
               login
           </button>
